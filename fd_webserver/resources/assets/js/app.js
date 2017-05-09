@@ -2,7 +2,10 @@ import bootstrap from 'bootstrap-sass';
 import CodeMirror from 'codemirror';
 import fileSaver from 'file-saver';
 import jQuery from 'jquery';
+//import jqueryui from 'jquery-ui';
 import commonlisp from 'codemirror/mode/commonlisp/commonlisp.js';
+import gridstack from 'gridstack';
+import gridstackui from 'gridstack/src/gridstack.jQueryUI'
 
 window._ = require('lodash');
 window.$ = window.jQuery = jQuery;
@@ -63,4 +66,9 @@ window.onload = function() {
                 alert("An error occurred that most likely caused by the planner timing out. This means the problem it was trying to solve was too hard, and your domain file should probably be redesigned to reduce the number of applicable actions for a given state (e.g. by using stronger typing).");
             });
     });
+
+    var options = {
+        float: false
+    };
+    $('.grid-stack').gridstack(options);
 };
