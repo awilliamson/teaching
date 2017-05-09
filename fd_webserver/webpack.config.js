@@ -86,5 +86,13 @@ module.exports = {
         new ManifestPlugin({
             publicPath: "static/"
         })
-    ]
+    ],
+    resolve: {
+        alias: {
+            // bind version of jquery-ui
+            "jquery-ui": "jquery-ui/ui",
+            modules: path.join(__dirname, "node_modules/")
+        }
+    }
+
 };
