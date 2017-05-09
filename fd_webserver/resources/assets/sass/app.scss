@@ -9,6 +9,13 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "~codemirror/lib/codemirror.css";
 @import "~codemirror/theme/eclipse.css";
 
+@import "~gridstack/src/gridstack.scss";
+@import "~gridstack/src/gridstack-extra.scss";
+
+@import "~jquery-ui-dist/jquery-ui.css";
+@import "~jquery-ui-dist/jquery-ui.structure.css";
+@import "~jquery-ui-dist/jquery-ui.theme.css";
+
 
 .CodeMirror {
   border: 1px solid #eee;
